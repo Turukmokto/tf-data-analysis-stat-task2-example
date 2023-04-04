@@ -17,6 +17,5 @@ def solution(p: float, x: np.array) -> tuple:
     a = 1 - p
     l = x.mean()
     shift = np.sqrt(np.var(x)) / np.sqrt(len(x))
-    return ans(1 - a / 2, l, shift), \
-           ans(a / 2, l, shift)
+    return ans(1 - a / 2, l, shift), ans(a / 2, l, shift)
 
